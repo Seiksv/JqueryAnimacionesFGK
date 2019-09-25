@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <title>Inicio</title>
+</head>
+<body>
+<div class="text-center" style="margin-left:35%">
+
+        <!-- ej1 -->
+
+   <div class="row">
+     <div class="col-xs-1-12">
+       <div class="card">
+         <div class="card-body">
+           <h3 class="card-title">Esconder</h3>
+           <p class="card-text" id="p-ej1">Al presionar el boton de abajo me escondere,<br> vuelvelo a presionar para que aparezca de nuevo.
+            <code><br> $("Ej1").click(function(){<br> 
+                    $("p").toggle();<br> 
+                  });</code></p>
+           <button id="ej1">Presioname</button>
+         </div>
+       </div>
+    
+     <!-- ej2 -->
+  
+        <div class="col-xs-1-12">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Efecto FADE in - out</h3>
+              <p class="card-text" id="p-ej2">Al presionar el boton de abajo me escondere,<br> vuelvelo a presionar para que aparezca de nuevo con animacion.
+               <code><br> $("Ej2").click(function(){<br> 
+                     $("#div2").fadeToggle("slow");<br> 
+                     });</code></p>
+              <button id="ej2">Presioname</button>
+            </div>
+          </div>
+       
+         <!-- ej3 -->
+   
+        <div class="col-xs-1-12">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Efecto Slide in - out</h3>
+              <p class="card-text" id="p-ej3">Al presionar el boton de abajo me escondere,<br> vuelvelo a presionar para que aparezca de nuevo con animacion.
+               <code><br> $("Ej3").click(function(){<br> 
+                    $("#p-ej3").slideToggle("slow");<br> 
+                     });</code></p>
+              <button id="ej3">Presioname</button>
+            </div>
+          </div>
+        </div>
+ <!-- ej3 -->
+   
+ <div class="col-xs-1-12">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Animaciones</h3>
+            <p class="card-text" id="p-ej4">Al presionar el boton de abajo me hare animaciones,<br> depende que valores pasemos asi sera la animacion.
+             <code><br> $("Ej4").click(function(){<br> 
+                $("#p-ej4").animate({
+                    left: '250px',<br> 
+                    opacity: '0.5',<br> 
+                    height: '150px',<br> 
+                    width: '150px'<br> 
+                  });<br> 
+                   });</code></p>
+            <button id="ej4">Presioname</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>    
+        
+    
+    <script src="jquery-3.4.1.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="animaciones.js"></script>
+</body>
+</html>
