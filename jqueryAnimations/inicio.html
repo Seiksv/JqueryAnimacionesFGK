@@ -54,7 +54,7 @@
             </div>
           </div>
         </div>
- <!-- ej3 -->
+ <!-- ej4 -->
    
  <div class="col-xs-1-12">
         <div class="card">
@@ -74,7 +74,57 @@
         </div>
       </div>
 
+<!-- ej5 -->
+   
+<div class="col-xs-1-12">
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">Animaciones Encadenadas</h3>
+      <p class="card-text" id="p-ej5">Al presionar el boton de abajo me hare animaciones,<br> depende que valores pasemos asi sera la animacion.
+       <code><br> $("Ej4").click(function(){<br> 
+               $("#p1").css("color", "red").slideUp(2000).slideDown(2000);<br> 
+             });</code></p>
+      <button id="ej5">Presioname</button>
+    </div>
+  </div>
+</div>
 
+
+<!-- ej6 -->
+   <style>
+   #bola {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border: black 2px solid;
+  border-radius : 10px;
+  position: relative;
+}
+</style>
+<div class="col-xs-1-12">
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">Animaciones Sin fin</h3>
+      <div class="card-text" id="bola">
+      </div>
+      
+      <div>
+      <code>
+        $(function(){<br>
+          function animarBola() {<br>
+            $("#bola").animate({left: '+=50'}, "slow")<br>
+                      .animate({top: '+=50'}, "slow")<br>
+                      .animate({left: '-=50'}, "slow")<br>
+                      .animate({top: '-=50'}, "slow");   <br>
+          }<br>
+          setInterval(animarBola, 2400);<br>
+        });
+      </code>
+    </div>
+      <button id="ej6">Presioname</button>
+    </div>
+  </div>
+</div>
     </div>    
         
     

@@ -13,10 +13,23 @@ $(document).ready(function(){
       });
       //Ejemplo 4 - Animaciones.
     $("#ej4").click(function(){
-       
             var div = $("#p-ej4");  
             div.animate({left: '100px'}, "slow");
             div.animate({fontSize: '3em'}, "slow");
           });
+      //Ejemplo 5 - Animaciones encadenadas.
+    $("#ej5").click(function(){
+      $("#p-ej5").css("color", "red").slideUp(2000).slideDown(2000);
+    });
+    //Ejemplo 6 - Animar bolas.
+    $(function(){
+      function animarBola() {
+        $("#bola").animate({left: '+=50'}, "slow")
+                  .animate({top: '+=50'}, "slow")
+                  .animate({left: '-=50'}, "slow")
+                  .animate({top: '-=50'}, "slow");   
+      }
+      setInterval(animarBola, 2400);
+    });
      
   });
